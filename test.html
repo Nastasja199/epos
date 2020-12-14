@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test|Kursevi engleskog jezika</title>
+    <link rel="stylesheet" href="styleTest.css">
+    <script src="js/jQuery.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <img src="slike/logo.jpg" alt="">
+            <ul>
+                <li><a href="index.html">Pocetak</a></li>
+                <li><a href="kursevi.html">Kursevi</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="wavy">
+                <span style="--i:1;">T</span>
+                <span style="--i:2;">E</span>
+                <span style="--i:3;">S</span>
+                <span style="--i:4;">T</span>
+            </div>
+        </div>
+    </header>
+    <div class="mainPart">
+        <form name="quiz" id="quiz">
+            <div>
+                <p class="q">1. I ______ bus on Mondays.</p>
+                <p><input type="radio" name="question1" value="A">A. 'm going to work with</p>
+                <p><input type="radio" name="question1" value="B">B. 'm going to work by</p>
+                <p><input type="radio" name="question1" value="C">C. go to work with</p>
+                <p><input type="radio" name="question1" value="D">D. go to work by</p>
+            </div>
+            <div>
+                <p class="q">2. Sorry, but this chair is ______.</p>
+                <p><input type="radio" name="question2" value="A">A. me</p>
+                <p><input type="radio" name="question2" value="B">B. mine</p>
+                <p><input type="radio" name="question2" value="C">C. myh</p>
+                <p><input type="radio" name="question2" value="D">D. our</p>
+            </div>
+            <div>
+                <p class="q">3. A: 'How old ______?' B: 'I ______ .'</p>
+                <p><input type="radio" name="question3" value="A">A. are you / am 20 years old</p>
+                <p><input type="radio" name="question3" value="B">B. have you / have 20 years old</p>
+                <p><input type="radio" name="question3" value="C">C. are you / am 20 years.</p>
+                <p><input type="radio" name="question3" value="D">D. do you have / have 20 years.</p>
+            </div>
+            <div>
+                <p class="q">4. Where ______ ?</p>
+                <p><input type="radio" name="question4" value="A">A. your sister works</p>
+                <p><input type="radio" name="question4" value="B">B. your sister work</p>
+                <p><input type="radio" name="question4" value="C">C. does your sister work</p>
+                <p><input type="radio" name="question4" value="D">D. do your sister work</p>
+            </div>
+            <div>
+                <p class="q">5. The test is ______ February.</p>
+                <p><input type="radio" name="question5" value="A">A. in</p>
+                <p><input type="radio" name="question5" value="B">B. at</p>
+                <p><input type="radio" name="question5" value="C">C. on</p>
+                <p><input type="radio" name="question5" value="D">D. over</p>
+            </div>
+            <div>
+                <p class="q">6. I eat pasta ______ week.</p>
+                <p><input type="radio" name="question6" value="A">A. twice in a</p>
+                <p><input type="radio" name="question6" value="B">B. twice a</p>
+                <p><input type="radio" name="question6" value="C">C. one time a</p>
+                <p><input type="radio" name="question6" value="D">D. once in a</p>
+            </div>
+            <div>
+                <p class="q">7. I don't have ______ free time.</p>
+                <p><input type="radio" name="question7" value="A">A. many</p>
+                <p><input type="radio" name="question7" value="B">B. any</p>
+                <p><input type="radio" name="question7" value="C">C. a lot</p>
+                <p><input type="radio" name="question7" value="D">D. some</p>
+            </div>
+            <div>
+                <p class="q">8. A: '_____ to the cinema tomorrow?'</p>
+                <p><input type="radio" name="question8" value="A">A. We will go</p>
+                <p><input type="radio" name="question8" value="B">B. Do we go</p>
+                <p><input type="radio" name="question8" value="C">C. We go</p>
+                <p><input type="radio" name="question8" value="D">D. Shall we go</p>
+            </div>
+            <div>
+                <p class="q">9. We went to the market ______ some vegetables.</p>
+                <p><input type="radio" name="question9" value="A">A. to buy</p>
+                <p><input type="radio" name="question9" value="B">B. for buy</p>
+                <p><input type="radio" name="question9" value="C">C. for to buy</p>
+                <p><input type="radio" name="question9" value="D">D. for buying</p>
+            </div>
+            <div class=btn> <input type="button" class="btn_end" value="Kraj testa!" onclick="check()"></div>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="js/jQueryTest.js"></script>
+</body>
+
+</html>

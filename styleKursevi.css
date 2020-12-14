@@ -1,0 +1,354 @@
+@font-face {
+  font-family: myFont;
+  src: url(NerkoOne-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: myFont;
+  font-size: 35px;
+}
+
+header {
+  background-image: url(slike/kurseviSlika.jpg);
+  background-size: cover;
+  height: 68vh;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 10px;
+}
+ul li {
+  display: inline;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: 0.6s ease;
+}
+ul li a:hover {
+  background-color: rgb(255, 0, 43);
+}
+
+.wavy {
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wavy span {
+  font-size: 170px;
+  position: relative;
+  display: inline-block;
+  color: rgb(255, 0, 43);
+  text-transform: uppercase;
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ************************************************************************************** */
+
+.mainPart {
+  background-image: url(slike/kurseviSlika1.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.proveriZnanje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pozdrav {
+  color: white;
+  border-radius: 10px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgb(255, 0, 43);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ulazniTest {
+  color: white;
+  border-radius: 10px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+  background-color: rgb(255, 0, 43);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.odaberi {
+  color: white;
+  border-radius: 10px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgb(255, 0, 43);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnUlazniTest {
+  padding: 10px 10px 10px 10px;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(23, 23, 172);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+
+.btnUlazniTest:hover {
+  transition-duration: 0.4s;
+  padding: 10px 10px 10px 10px;
+  font-size: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.karticeKurseva {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.karticeKurseva img {
+  width: 100px;
+  height: 100px;
+}
+
+.karticeKurseva h1 {
+  font-size: 25px;
+}
+
+.karticeKurseva div {
+  overflow: hidden;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 280px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.karticeKurseva .cena {
+  font-size: 25px;
+}
+
+.nivoi {
+  text-align: center;
+  font-size: 23px;
+  height: 50px;
+  width: 80px;
+  padding: 5px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.nivoi_kurseva {
+  text-align: center;
+  font-size: 23px;
+  height: 60px;
+  width: 80px;
+  padding: 5px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.kursOpsti .nivoi:hover {
+  color: white;
+  background: rgb(255, 0, 43);
+}
+
+.kursOpsti .nivoi_kurseva:hover {
+  color: white;
+  background: rgb(255, 0, 43);
+}
+
+.kursTOEFL .nivoi:hover {
+  color: white;
+  background: rgb(255, 0, 43);
+}
+
+.kursTOEFL .nivoi_kurseva:hover {
+  color: white;
+  background: rgb(255, 0, 43);
+}
+
+.kursBiznis .nivoi:hover {
+  color: white;
+  background: rgb(23, 23, 172);
+}
+
+.kursBiznis .nivoi_kurseva:hover {
+  color: white;
+  background: rgb(23, 23, 172);
+}
+
+.kursOpsti .nivoi {
+  color: rgb(255, 0, 43);
+}
+
+.kursOpsti .nivoi_kurseva {
+  color: rgb(255, 0, 43);
+}
+
+.kursBiznis .nivoi {
+  color: rgb(23, 23, 172);
+}
+
+.kursBiznis .nivoi_kurseva {
+  color: rgb(23, 23, 172);
+}
+
+.kursTOEFL .nivoi {
+  color: rgb(255, 0, 43);
+}
+
+.kursTOEFL .nivoi_kurseva {
+  color: rgb(255, 0, 43);
+}
+
+.kursOpsti .nivoi_kurseva {
+  display: none;
+}
+
+.kursBiznis .nivoi_kurseva {
+  display: none;
+}
+
+.kursTOEFL .nivoi_kurseva {
+  display: none;
+}
+
+.kursOpsti {
+  background-color: rgb(255, 0, 43);
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.kursBiznis {
+  background-color: rgb(23, 23, 172);
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.kursTOEFL {
+  background-color: rgb(255, 0, 43);
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 700px) {
+
+  .wavy span {
+    font-size: 100px;
+  }
+
+  .karticeKurseva {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .karticeKurseva div {
+    overflow: hidden;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 550px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proveriZnanje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pozdrav {
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(255, 0, 43);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .ulazniTest {
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+    background-color: rgb(255, 0, 43);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .odaberi {
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(255, 0, 43);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}

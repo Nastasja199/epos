@@ -1,0 +1,80 @@
+@font-face {
+  font-family: myFont;
+  src: url(NerkoOne-Regular.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: myFont;
+}
+
+.banner {
+  background-color: rgb(255, 56, 66);
+}
+.top-bar {
+  background-image: url(slike/zastave.jpg);
+  background: cover;
+  display: flex;
+  height: 50vh;
+}
+.logo {
+  float: left;
+}
+.menu {
+  flex: 1;
+}
+.menu ul {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 10px;
+  list-style: none;
+  justify-content: flex-end;
+}
+.menu ul li {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+  color: rgb(143, 52, 228);
+}
+.menu ul li a:hover {
+  text-decoration: none;
+  color: rgb(156, 71, 156);
+}
+
+.banner-text {
+  display: flex;
+  padding: 2.9% 0;
+}
+.banner-text-items {
+  color: yellow;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+.banner-text-items h2 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+.banner-text-items p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#btn1 {
+  color: white;
+  padding: 15px 32px;
+  font-size: 40px;
+  background-color: rgb(38, 248, 220);
+  text-align: center;
+  display: inline-block;
+  border-radius: 8px;
+}
+.srce {
+  width: 20px;
+  height: 15px;
+}

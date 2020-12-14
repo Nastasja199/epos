@@ -1,0 +1,42 @@
+@font-face {
+  font-family: myFont;
+  src: url(NerkoOne-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: myFont;
+  font-size: 35px;
+}
+
+header {
+  background-image: url(slike/zastave.jpg);
+  height: 68vh;
+  background-position: top;
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 10px;
+}
+ul li {
+  display: inline;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: 0.6s ease;
+}
+ul li a:hover {
+  background-color: rgb(255, 0, 43);
+}
+
+.mainPart {
+  background-image: url("slike/zastave1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

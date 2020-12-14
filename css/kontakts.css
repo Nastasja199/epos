@@ -1,0 +1,63 @@
+@font-face {
+  font-family: myFont;
+  src: url(NerkoOne-Regular.ttf);
+}
+
+*{
+  font-family: myFont;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 56, 66);
+}
+.formarea {
+  background-color: white;
+  display: flex;
+  height: 500px;
+  padding: 20px;
+  width: 70%;
+  padding-bottom: 10px;
+  align-items: center;
+  box-shadow: 20px 40px 30px blueviolet;
+  border-radius: 100px;
+}
+.img-area {
+  height: 350px;
+  width: 50%;
+  background: url(slike/ucenje.jpg);
+  background-position: center;
+}
+.formarea h2 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.formarea input {
+  width: 60%;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding: 10px;
+  border-radius: 25px;
+}
+.formarea textarea {
+  width: 95%;
+  padding: 10px;
+  height: 25vh;
+}
+.formarea button {
+  margin-top: 15px;
+  font-size: 1em;
+  background-color: white;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 15px;
+}
